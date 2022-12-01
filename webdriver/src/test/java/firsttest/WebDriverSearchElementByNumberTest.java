@@ -1,11 +1,11 @@
 package firsttest;
 
-import org.junit.Assert;
-import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
@@ -26,9 +26,9 @@ public class WebDriverSearchElementByNumberTest {
         WebElement AcceptBtn = driver.findElement(By.xpath("//*[@id=\"CybotCookiebotDialogBodyLevelButtonAccept\"]"));
         AcceptBtn.click();
 
-        Assert.assertTrue("Search result is not searchable!", searchResult.size()==1);
+        Assert.assertTrue(searchResult.size()==1, "Search result is not searchable!");
 
-        driver.quit();
+
 
     }
 }
