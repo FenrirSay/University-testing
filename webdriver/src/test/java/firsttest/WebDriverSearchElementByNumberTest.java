@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-
 import java.util.List;
 
 public class WebDriverSearchElementByNumberTest {
@@ -27,8 +26,5 @@ public class WebDriverSearchElementByNumberTest {
         AcceptBtn.click();
 
         Assert.assertTrue(searchResult.size()==1, "Search result is not searchable!");
-
-
-
     }
 }
